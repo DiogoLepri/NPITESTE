@@ -123,4 +123,5 @@ a:hover i::after{
 }
 .about-col-1 img{
     width: 100%;    
+    border-radius: 15px;
 }
