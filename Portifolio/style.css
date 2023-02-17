@@ -77,7 +77,6 @@ a i::before{
 a:hover i::before{
     width: 20px;
     left: 20%;
-
 }
 a i::after{
     content: '';
