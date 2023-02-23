@@ -168,6 +168,3 @@ a:hover i::after{
 .tab-contents{
     display: none;
 }
-.tab-contents.active-tab{
-    display: block;
-}
