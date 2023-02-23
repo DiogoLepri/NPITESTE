@@ -146,7 +146,7 @@ a:hover i::after{
 }
 .tab-links::after{
     content: '';
-    width: 50px;
+    width: 0;
     height: 3px;
     background: #000000;
     position: absolute;
@@ -155,7 +155,7 @@ a:hover i::after{
     transition: 0.5s;
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 40%;
 }
 .tab-contents ul li{
     list-style: none;
@@ -167,4 +167,7 @@ a:hover i::after{
 }
 .tab-contents{
     display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }
