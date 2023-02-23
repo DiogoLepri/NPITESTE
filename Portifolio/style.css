@@ -103,7 +103,7 @@ a:hover i::after{
 .header-text h1 span{
     color: #000000;
 }
-/* -----------Sobre------------- */
+/* -----------------------Sobre--------------------------*/
 #about{
     padding: 80px 0;
     color: rgb(0, 0, 0);
@@ -155,7 +155,7 @@ a:hover i::after{
     transition: 0.5s;
 }
 .tab-links.active-link::after{
-    width: 40%;
+    width: 50%;
 }
 .tab-contents ul li{
     list-style: none;
@@ -171,3 +171,4 @@ a:hover i::after{
 .tab-contents.active-tab{
     display: block;
 }
+/*----------------------------Projetos--------------------*/

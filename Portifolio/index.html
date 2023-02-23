@@ -38,9 +38,9 @@
                 e moramos la por 7 anos.</p>
                     
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skils')"><b>Habilidades</b></p>
-                    <p class="tab-links"onclick="opentab('experience')"><b>Expêriencia</b></p>
-                    <p class="tab-links"onclick="opentab('education')"><b>Educação</b></p>
+                    <p class="tab-links active-link" onclick="opentab('skills')"><b>Habilidades</b></p>
+                    <p class="tab-links" onclick="opentab('experience')"><b>Expêriencia</b></p>
+                    <p class="tab-links" onclick="opentab('education')"><b>Educação</b></p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
@@ -48,12 +48,14 @@
                         <li><span><b>🚧    Em Andamento    🚧</b></span><br>🚧      Em Andamento       🚧</li>
                         <li><span><b>🚧    Em Andamento    🚧</b></span><br>🚧      Em Andamento       🚧</li>
                     </ul>
+                </div>
                 <div class="tab-contents" id="experience">
                     <ul>
                         <li><span><b>🚧    Em Andamento    🚧</b></span><br>🚧      Em Andamento       🚧</li>
                         <li><span><b>🚧    Em Andamento    🚧</b></span><br>🚧      Em Andamento       🚧</li>
                         <li><span><b>🚧    Em Andamento    🚧</b></span><br>🚧      Em Andamento       🚧</li>
                     </ul>
+                </div>    
                 <div class="tab-contents" id="education">
                     <ul>
                         <li><span><b>🚧    Em Andamento    🚧</b></span><br>🚧      Em Andamento       🚧</li>
@@ -66,6 +68,9 @@
     </div> 
 </div>
 
+
+<!-- --------------------------Projetos-----------------------  -->
+
 <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
@@ -73,11 +78,16 @@
     
     function opentab(tabname){
         for(tablink of tablinks){
-            tablink.classlist.remove("active-link");
+            tablink.classList.remove("active-link");
         }
         for(tabcontent of tabcontents){
-            tabcontent.classlist.remove("active-tab");
+            tabcontent.classList.remove("active-tab");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    
+    
+    
     }
 
 </script>
