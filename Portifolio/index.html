@@ -18,6 +18,7 @@
                 <li><a href="#" style="--clr:#000000;"><span>Contato</span><i></i></a></li>  
             </ul>
         </nav>
+<hr class="new1">
         <div class="header-text">
                 <h1>Oi, eu sou o<br><span>Diogo Lepri</span></h1>
         </div>
@@ -25,7 +26,7 @@
 </div>
 <!-- ----------------Sobre-----------------------  -->
 <div id="about">
-    <div class="container">
+    <div class="container1">
         <div class="row">
             <div class="about-col-1">
                 <img src="Imagens/foto.2.JPG">
@@ -67,9 +68,45 @@
         </div>
     </div> 
 </div>
+<!--< --------------------------Projetos-----------------------  -->
+<div id="portifolio">
+    <div class="container">
+        <h1 class="sub-title">Meus Trabalhos</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Imagens/portfolio.jpg">
+                    <div v-html="data">
+                        <div class="layer">
+                            <a href="#"><h3>Portifolio</h3></a>
+                            <p>Esse portifolio que você está vendo agora foi um projeto aonde 
+                                eu estava aprendendo a usar html e css. Criando algo util que posso usar para o meu futuro
+                                como um portifolio.  
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="Imagens/loading.jpg">
+                    <div class="layer">
+                        <a href="#"><h3>Projeto em andamento</h3></a>
+                        <p>Projeto em andamento.</p>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="Imagens/loading.jpg">
+                    <div class="layer">
+                        <a href="#"><h3>Projeto em andamento</h3></a>
+                        <p>Projeto em andamento.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-<!-- --------------------------Projetos-----------------------  -->
+
+</div>
+
+
 
 <script>
 
@@ -85,9 +122,6 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-    
-    
-    
     }
 
 </script>

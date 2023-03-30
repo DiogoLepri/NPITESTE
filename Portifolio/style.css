@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(115,115,115,255);
+    background-color: #bbbbbb;
 }       
 #header{
     width: 100%;
@@ -30,9 +30,9 @@ nav ul li{
     list-style: none;
     margin: 10px 20px;
 }
-a{
+nav ul li a{
     position: relative;
-    background: #d3d3d3;
+    background: black;
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
@@ -42,58 +42,59 @@ a{
     padding: 10px 30px;
     transition: 0.5s;
 }
-a:hover{
-    background: #d3d3d3;
+nav ul li a:hover{
+    background:#bbbbbb;
     color: var(--clr);
     letter-spacing: 0.25em;
     box-shadow: 0 0 25px var(--clr);
 }
-a:before{
+nav ul li a:before{
     content: '';
     position: absolute;
     inset: 2px;
-    background:  #d3d3d3;
+    background:  #bbbbbb;
 }
-a span{
+nav ul li a span{
     position: relative;
     z-index: 1;
 }  
-a i{
+nav ul li a i{
     position: absolute;
     inset: 0;
     display: block;
 }
-a i::before{
+nav ul li a i::before{
     content: '';
     position: absolute;
     top: 0;
     left: 80%;
     width: 10px;
     height: 4px;
-    background: ;
+    background: #bbbbbb;
     transform: translateX(-50%) skewX(325deg);
     transition: 0.5S ;
 }
-a:hover i::before{
+nav ul li a:hover i::before{
     width: 20px;
     left: 20%;
 }
-a i::after{
+nav ul li a i::after{
     content: '';
     position: absolute;
     bottom: 0;
     left: 20%;
     width: 10px;
     height: 4px;
-    background: ;
+    background: #bbbbbb;
     transform: translateX(-50%) skewX(325deg);
     transition: 0.5S ;
 }
-a:hover i::after{
+nav ul li a:hover i::after{
     width: 20px;
     left: 80%;
 
 }
+
 .header-text h1{
     margin-left: 5%;
     margin-top: 20%;
@@ -107,6 +108,10 @@ a:hover i::after{
 #about{
     padding: 80px 0;
     color: rgb(0, 0, 0);
+}
+.container1{
+    padding: 10px 10%;
+    background-color: grey;
 }
 .row{
     display: flex;
@@ -123,6 +128,7 @@ a:hover i::after{
 .about-col-1 img{
     width: 100%;    
     border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -148,7 +154,7 @@ a:hover i::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #000000;
+    background: #bbbbbb;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -172,3 +178,23 @@ a:hover i::after{
     display: block;
 }
 /*----------------------------Projetos--------------------*/
+#portifolio{
+    padding: 30px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    display: block;
+}
